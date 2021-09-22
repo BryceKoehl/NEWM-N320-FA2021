@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Lab</title>
+</head>
+
+<body>
+    <h1 style="color: rgba(5,34,92,255);">Bryce Koehl - Animation Lab</h1>
+    <div id="main-box">
+        <svg width="900" height="110">
+            <rect width="1080" height="100" style="fill:rgba(5,34,92,255);" />
+        </svg>
+    </div>
+
+    <div id="grid-container">
+        <div id="one"><svg width="200" height="110">
+                <rect width="200" height="100" style="fill:rgba(146,39,143,255);" />
+            </svg></div>
+        <div id="two"><svg width="200" height="110">
+                <rect width="200" height="100" style="fill:rgba(146,39,143,255);" />
+            </svg></div>
+        <div id="three"><svg width="200" height="110">
+                <rect width="200" height="100" style="fill: rgba(146,39,143,255);" />
+            </svg></div>
+        <div id="four"><svg width="200" height="110">
+                <rect width="200" height="100" style="fill:rgba(146,39,143,255);" />
+            </svg></div>
+        <div id="five"><svg width="200" height="110">
+                <rect width="200" height="100" style="fill:rgba(146,39,143,255);" />
+            </svg></div>
+        <div id="six"><svg width="200" height="110">
+                <rect width="200" height="100" style="fill:rgba(146,39,143,255);" />
+            </svg></div>
+
+    </div>
+    <style>
+        h1 {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+        }
+
+        #main-box {
+            visibility: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        #grid-container {
+            visibility: hidden;
+            display: grid;
+            grid-row-gap: 50px;
+            grid-template-columns: auto auto auto;
+            padding: 10px;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        ;
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="/app/app.js"></script>
+</body>
+
+</html>
