@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <title>Tic Tac Toe</title>
+</head>
+
+<body>
+  <!-- Display game div houses the title and the button and the current player -->
+  <div class="displayGame">
+    <h1>tic tac toe</h1>
+
+    <h2 class="gameInfo">Click to Start Game</h2>
+    <button onclick="game.startGame()" class="startGame">start game</button>
+  </div>
+
+
+  <!-- draw the SVG's -->
+  <svg>
+    <rect class="border" x="50" y="50" height="500" width="500"></rect>
+
+    <rect class="line" x="200" y="50" height="499" width="10"></rect>
+    <rect class="line" x="375" y="50" height="499" width="10"></rect>
+    <rect class="line" x="50" y="200" height="10" width="499"></rect>
+    <rect class="line" x="50" y="375" height="10" width="499"></rect>
+  </svg>
+  <!-- overlay the divs with the SVG's to gather the data needed for functions-->
+  <div class="gameboard">
+    <div class="cell" id="0"></div>
+    <div class="cell" id="1"></div>
+    <div class="cell" id="2"></div>
+    <div class="cell" id="3"></div>
+    <div class="cell" id="4"></div>
+    <div class="cell" id="5"></div>
+    <div class="cell" id="6"></div>
+    <div class="cell" id="7"></div>
+    <div class="cell" id="8"></div>
+  </div>
+
+  <script src="app/app.js"></script>
+</body>
+
+</html>

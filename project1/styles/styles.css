@@ -1,0 +1,67 @@
+.gameboard {
+  position: fixed;
+  z-index: 99;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  width: 500px;
+  height: 500px;
+  margin: 60px;
+}
+
+svg {
+  position: fixed;
+  height: 100vh;
+  width: 50vw;
+}
+
+.border {
+  fill: whitesmoke;
+  stroke: black;
+  stroke-width: 5;
+  animation-name: shift;
+  animation-duration: 2s;
+  animation-iteration-count: 3;
+}
+.line {
+  fill: black;
+  stroke: black;
+  stroke-width: 0;
+}
+
+.cell {
+  height: 150px;
+  width: 150px;
+  text-align: center;
+  line-height: 125px;
+  font-size: 75px;
+  font-family: Impact, Charcoal, sans-serif;
+  color: black;
+}
+
+.displayGame {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 50vw;
+}
+.displayGame h1 {
+  text-transform: uppercase;
+  text-align: left;
+  font-family: Impact, Charcoal, sans-serif;
+  animation-name: hover;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  font-size: 60px;
+}
+
+.displayGame h2 {
+  text-transform: capitalize;
+  font-family: Impact, Charcoal, sans-serif;
+}
+
+.displayGame button {
+  color: green;
+  font-size: large;
+  padding: 5px 5px;
+}
